@@ -4,9 +4,9 @@
   "license": "UNLICENSED",
   "private": "true",
   "scripts": {
-    "dev": "dotenv -e ./.env -e ../../../.env -- next dev -p 3003",
-    "start": "dotenv -e ./.env -e ../../../.env -- next start",
-    "build": "dotenv -e ./.env -e ../../../.env -- next build",
+    "dev": "node init && dotenv -e ./.env -e ../../../.env -- next dev -p 3003",
+    "start": "node init && dotenv -e ./.env -e ../../../.env -- next start",
+    "build": "node init && dotenv -e ./.env -e ../../../.env -- next build",
     "lint": "next lint",
     "analyze": "cross-env ANALYZE=true next build"
   },

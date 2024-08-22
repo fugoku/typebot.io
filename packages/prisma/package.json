@@ -6,7 +6,7 @@
   "types": "./index.ts",
   "private": true,
   "scripts": {
-    "dev": "dotenv -e ./.env -e ../../.env -- tsx scripts/studio.ts",
+    "dev": "node init && dotenv -e ./.env -e ../../.env -- tsx scripts/studio.ts",
     "db:generate": "dotenv -e ./.env -e ../../.env -- tsx scripts/db-generate.ts",
     "db:generate:mysql": "DATABASE_URL=mysql:// dotenv -e ./.env -e ../../.env -- tsx scripts/db-generate.ts",
     "db:push": "dotenv -e ./.env -e ../../.env -- tsx scripts/db-push.ts",
