@@ -6,8 +6,8 @@
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "dev": "rollup --watch --config rollup.config.js",
-    "build": "rollup --config rollup.config.js",
+    "dev": "node init && rollup --watch --config rollup.config.js",
+    "build": "node init && rollup --config rollup.config.js",
     "lint": "eslint --fix \"src/**/*.ts*\"",
     "format:check": "prettier --check ./src"
   },
